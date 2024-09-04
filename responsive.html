@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive</title>
+    <style>
+        body{
+            border:  1px solid seagreen;
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+        .imagecontainer{
+            display: flex;
+        }
+        .imagecontainer div{
+            width: 50%;
+        }
+        .imagecontainer img{
+            width: 100%;
+        }
+        @media screen and (max-width:576px)
+        {
+        .imagecontainer{
+            flex-direction: column-reverse;
+        }  
+        .imagecontainer div{
+            width: 100%;
+        }  
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>responsive website</h1>
+        <ol>
+            <li>viewport</li>
+            <li>css measuring unit</li>
+            <li>body max-width horizontal central align</li>
+            <li>image fluid</li>
+            <li>two columns and mediaquery with flex flex-direction column</li>
+            <li>grid layout</li>
+            <li>menu responsive with js</li>
+        </ol>
+    </header>
+    <main>
+        <div class="imagecontainer">
+            <div class="firstimage">
+                <img src="images/healtyfood.jpg" alt="">
+            </div>
+            <div class="secondimage">
+                <img src="images/healtyfood.jpg" alt="">
+            </div>
+        </div>
+   
+       
+    </main>
+</body>
+</html>
